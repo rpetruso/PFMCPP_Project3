@@ -338,16 +338,16 @@ Define an object that is made of 5 sub-objects.
     you'll define these 5 sub-objects in Part 1d.
 
 Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+5 properties: Computer
+    1) Display
+    2) RAM
+    3) CPU
+    4) Motherboard
+    5) Hard Drive
 3 things it can do:
-    1)
-    2)
-    3)
+    1) run a program
+    2) program a program
+    3) play a game
  */
 
  /*
