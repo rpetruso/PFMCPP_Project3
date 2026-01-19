@@ -196,7 +196,7 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1) FishStore
+Thing 1) Fish Store
 5 properties:
     1) number of tanks
     2) number of filters
@@ -208,41 +208,41 @@ Thing 1) FishStore
     2) employee sells to customer
     3) clean tanks
 
-Thing 2)
+Thing 2) Guitar Shop
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of Gibson guitars in stock
+    2) number of Fender guitars in stock
+    3) number of employees on given day
+    4) number of guitars sold per week
+    5) amount of strings left in stock
 3 things it can do:
-    1)
-    2)
-    3)
+    1) sell a guitar to a customer
+    2) change pricing on a guitar
+    3) calculate shipping cost on a guitar
 
-Thing 3)
+Thing 3) Guitar repair shop
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) amount of strings left in stock
+    2) amount of replacement electronics left in stock
+    3) amount of replacement pickups left in stock
+    4) number of guitar picks given out per day
+    5) number of guitars set up per day
 3 things it can do:
-    1)
-    2)
-    3)
+    1) fret redressing
+    2) change pickups
+    3) set up a guitar
 
-Thing 4)
+Thing 4) Recording studio
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of microphones 
+    2) number of amps
+    3) number of engineers on given day
+    4) number of tracks recorded per day
+    5) length of time recorded per day
 3 things it can do:
-    1)
-    2)
-    3)
+    1) record a track
+    2) mix a track
+    3) master a track
 */
 
 /*
