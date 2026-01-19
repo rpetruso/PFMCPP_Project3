@@ -195,54 +195,6 @@ Part 1b - Step 2: Assignment
         primitives.
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
-
-Thing 1) Fish Store
-5 properties:
-    1) number of tanks (int)
-    2) number of filters (int)
-    3) number of employees on given day (int)
-    4) fish sold per day (int)
-    5) amount of RO water used per day (float)
-3 things it can do:
-    1) water change
-    2) employee sells to customer
-    3) clean tanks
-
-Thing 2) Guitar Shop
-5 properties:
-    1) number of Gibson guitars in stock (int)
-    2) number of Fender guitars in stock (int)
-    3) number of employees on given day (int)
-    4) number of guitars sold per year (double)
-    5) amount of strings left in stock (int)
-3 things it can do:
-    1) sell a guitar to a customer
-    2) change pricing on a guitar
-    3) calculate shipping cost on a guitar
-
-Thing 3) Guitar repair shop
-5 properties:
-    1) amount of strings left in stock (int)
-    2) amount of replacement electronics left in stock (int)
-    3) amount of replacement pickups left in stock (int)
-    4) number of guitar picks given out per year (double)
-    5) number of guitars set up per day (int)
-3 things it can do:
-    1) fret redressing
-    2) change pickups
-    3) set up a guitar
-
-Thing 4) Recording studio
-5 properties:
-    1) number of microphones (int)
-    2) number of amps (int)
-    3) number of engineers on given day (int)
-    4) number of tracks recorded per day (float)
-    5) length of time recorded per day (float)
-3 things it can do:
-    1) record a track
-    2) mix a track
-    3) master a track
 */
 
 /*
@@ -336,18 +288,6 @@ Part 1c - Step 4: Assignment
 Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
-
-Thing 10)
-5 properties: Computer
-    1) Monitor
-    2) Memory
-    3) CPU
-    4) Motherboard
-    5) Storage
-3 things it can do:
-    1) run a program
-    2) program a program
-    3) play a game
  */
 
  /*
@@ -434,6 +374,106 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
+/*
+=================
+Part 1d - Step 3: Commit
+=================
+Now that you've made changes to the code, make a commit!
+Be sure to make the commit message meaningful.
+*/
+
+/*
+================
+Part 1d - Step 4: Assignment
+================
+    - write the name of the primitive type you'll be using after each property for UDTs 5 - 9.
+    - You already did this for UDTs 1-4 in Part 1c.
+    - Pick properties that can be represented with 'int float double bool char std::string'
+    
+example: 
+    Display:
+        Number of Pixels (int)
+        Amount of Power consumed (milliwatt-hours) (float)
+        Brightness (double)
+        width in cm (int)
+        height in cm (int)
+*/
+
+/*
+=================
+Part 1d - Step 5: Commit
+=================
+Now that you've made changes to the code, make a commit!
+Be sure to make the commit message meaningful.
+*/
+
+/*
+===================
+Part 1d - Step 6: assignment
+===================
+You've just defined 10 UDTs!
+4 of them are unrelated (UDTs 1-4).
+5 of them form the sub-objects that make up the 10th UDT. 
+
+MOVE THEM to the space below this block comment and put them in numerical order 
+(1 - 10).
+    DO NOT COPY. 
+    CUT AND PASTE. 
+    I do not want to see 2 copies of your Plain-English UDTs.  
+    I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
+    simply CUT and PASTE them in the space provided below:
+*/
+
+
+/*
+Thing 1) Fish Store
+5 properties:
+    1) number of tanks (int)
+    2) number of filters (int)
+    3) number of employees on given day (int)
+    4) fish sold per day (int)
+    5) amount of RO water used per day (float)
+3 things it can do:
+    1) water change
+    2) employee sells to customer
+    3) clean tanks
+
+Thing 2) Guitar Shop
+5 properties:
+    1) number of Gibson guitars in stock (int)
+    2) number of Fender guitars in stock (int)
+    3) number of employees on given day (int)
+    4) number of guitars sold per year (double)
+    5) amount of strings left in stock (int)
+3 things it can do:
+    1) sell a guitar to a customer
+    2) change pricing on a guitar
+    3) calculate shipping cost on a guitar
+
+Thing 3) Guitar repair shop
+5 properties:
+    1) amount of strings left in stock (int)
+    2) amount of replacement electronics left in stock (int)
+    3) amount of replacement pickups left in stock (int)
+    4) number of guitar picks given out per year (double)
+    5) number of guitars set up per day (int)
+3 things it can do:
+    1) fret redressing
+    2) change pickups
+    3) set up a guitar
+
+Thing 4) Recording studio
+5 properties:
+    1) number of microphones (int)
+    2) number of amps (int)
+    3) number of engineers on given day (int)
+    4) number of tracks recorded per day (float)
+    5) length of time recorded per day (float)
+3 things it can do:
+    1) record a track
+    2) mix a track
+    3) master a track
+
 Thing 5) Monitor
 5 properties:
     1) resolution width in pixels (int)
@@ -493,61 +533,19 @@ Thing 9) Storage
     1) write data
     2) store data
     3) load data
- */
-
-/*
-=================
-Part 1d - Step 3: Commit
-=================
-Now that you've made changes to the code, make a commit!
-Be sure to make the commit message meaningful.
-*/
-
-/*
-================
-Part 1d - Step 4: Assignment
-================
-    - write the name of the primitive type you'll be using after each property for UDTs 5 - 9.
-    - You already did this for UDTs 1-4 in Part 1c.
-    - Pick properties that can be represented with 'int float double bool char std::string'
     
-example: 
-    Display:
-        Number of Pixels (int)
-        Amount of Power consumed (milliwatt-hours) (float)
-        Brightness (double)
-        width in cm (int)
-        height in cm (int)
+Thing 10)
+5 properties: Computer
+    1) Monitor
+    2) Memory
+    3) CPU
+    4) Motherboard
+    5) Storage
+3 things it can do:
+    1) run a program
+    2) program a program
+    3) play a game     
 */
-
-/*
-=================
-Part 1d - Step 5: Commit
-=================
-Now that you've made changes to the code, make a commit!
-Be sure to make the commit message meaningful.
-*/
-
-/*
-===================
-Part 1d - Step 6: assignment
-===================
-You've just defined 10 UDTs!
-4 of them are unrelated (UDTs 1-4).
-5 of them form the sub-objects that make up the 10th UDT. 
-
-MOVE THEM to the space below this block comment and put them in numerical order 
-(1 - 10).
-    DO NOT COPY. 
-    CUT AND PASTE. 
-    I do not want to see 2 copies of your Plain-English UDTs.  
-    I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
-    simply CUT and PASTE them in the space provided below:
-*/
-
-
-
-
 
 
 
