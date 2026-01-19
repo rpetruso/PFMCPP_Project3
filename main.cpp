@@ -198,11 +198,11 @@ Part 1b - Step 2: Assignment
 
 Thing 1) Fish Store
 5 properties:
-    1) number of tanks
-    2) number of filters
-    3) number of employees on given day
-    4) fish sold per day
-    5) amount of RO water used per day
+    1) number of tanks (int)
+    2) number of filters (int)
+    3) number of employees on given day (int)
+    4) fish sold per day (int)
+    5) amount of RO water used per day (float)
 3 things it can do:
     1) water change
     2) employee sells to customer
@@ -210,11 +210,11 @@ Thing 1) Fish Store
 
 Thing 2) Guitar Shop
 5 properties:
-    1) number of Gibson guitars in stock
-    2) number of Fender guitars in stock
-    3) number of employees on given day
-    4) number of guitars sold per week
-    5) amount of strings left in stock
+    1) number of Gibson guitars in stock (int)
+    2) number of Fender guitars in stock (int)
+    3) number of employees on given day (int)
+    4) number of guitars sold per year (double)
+    5) amount of strings left in stock (int)
 3 things it can do:
     1) sell a guitar to a customer
     2) change pricing on a guitar
@@ -222,11 +222,11 @@ Thing 2) Guitar Shop
 
 Thing 3) Guitar repair shop
 5 properties:
-    1) amount of strings left in stock
-    2) amount of replacement electronics left in stock
-    3) amount of replacement pickups left in stock
-    4) number of guitar picks given out per day
-    5) number of guitars set up per day
+    1) amount of strings left in stock (int)
+    2) amount of replacement electronics left in stock (int)
+    3) amount of replacement pickups left in stock (int)
+    4) number of guitar picks given out per year (double)
+    5) number of guitars set up per day (int)
 3 things it can do:
     1) fret redressing
     2) change pickups
@@ -234,11 +234,11 @@ Thing 3) Guitar repair shop
 
 Thing 4) Recording studio
 5 properties:
-    1) number of microphones 
-    2) number of amps
-    3) number of engineers on given day
-    4) number of tracks recorded per day
-    5) length of time recorded per day
+    1) number of microphones (int)
+    2) number of amps (int)
+    3) number of engineers on given day (int)
+    4) number of tracks recorded per day (float)
+    5) length of time recorded per day (float)
 3 things it can do:
     1) record a track
     2) mix a track
@@ -308,7 +308,7 @@ Example:
 ===================
 Part 1c - Step 2: Assignment
 ===================
-    - write the name of the primitive type you'll be using after each property in UDTs 1-4 you created in Part 1b:
+    - write the name of the primitive type you'll be using after each property in UDTs 1-4 you created in Part 1b: 
     - pick properties that can be represented with 'int float double bool char std::string'.
     
 example: 
