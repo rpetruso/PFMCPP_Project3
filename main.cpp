@@ -339,11 +339,11 @@ Define an object that is made of 5 sub-objects.
 
 Thing 10)
 5 properties: Computer
-    1) Display
-    2) RAM
+    1) Monitor
+    2) Memory
     3) CPU
     4) Motherboard
-    5) Hard Drive
+    5) Storage
 3 things it can do:
     1) run a program
     2) program a program
@@ -434,65 +434,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) Monitor
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) resolution width in pixels (int)
+    2) resolution height in pixels (int) 
+    3) HDMI ports (int)
+    4) refresh rate in Hz (int)
+    5) diagnal size in inches (int)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) display an image
+    2) display a video
+    3) display a game
 
-Thing 6)
+Thing 6) Memory
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) amount of RAM in GB (int)
+    2) speed of RAM in Hz (double)
+    3) RAM standard (std::string)
+    4) product voltage (float)
+    5) RAM technology (std::string)  
 3 things it can do:
-    1)
-    2)
-    3)
+    1) run game 
+    2) run program
+    3) temporarily store data
 
-Thing 7)
+Thing 7) CPU
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) clock speed in GHz (float)
+    2) core count (int)
+    3) max clock speed in GHz (float)
+    4) max temperature in C (int)
+    5) model (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) process data
+    2) compute data
+    3) fetch instructions from memory
 
-Thing 8)
+Thing 8) Motherboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) RAM slots (int)
+    2) PCI slots (int)
+    3) branch (std::string)
+    4) form factor (std::string)
+    5) chipset (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) connect to CPU
+    2) connect RAM
+    3) connect GPU
 
-Thing 9)
+Thing 9) Storage
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of hard drives (int)
+    2) number of SSD drives (int)
+    3) total storage in GB (int)
+    4) write speed in MB/s (int)
+    5) brand (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) write data
+    2) store data
+    3) load data
  */
 
 /*
