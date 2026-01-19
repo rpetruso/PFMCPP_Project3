@@ -196,17 +196,17 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) FishStore
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of tanks
+    2) number of filters
+    3) number of employees on given day
+    4) fish sold per day
+    5) amount of RO water used per day
 3 things it can do:
-    1)
-    2)
-    3)
+    1) water change
+    2) employee sells to customer
+    3) clean tanks
 
 Thing 2)
 5 properties:
