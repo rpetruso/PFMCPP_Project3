@@ -374,7 +374,6 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-/*
 =================
 Part 1d - Step 3: Commit
 =================
