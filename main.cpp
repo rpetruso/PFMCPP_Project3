@@ -424,127 +424,225 @@ MOVE THEM to the space below this block comment and put them in numerical order
 */
 
 
-/*
-Thing 1) Fish Store
-5 properties:
-    1) number of tanks (int)
-    2) number of filters (int)
-    3) number of employees on given day (int)
-    4) fish sold per day (int)
-    5) amount of RO water used per day (float)
-3 things it can do:
-    1) water change
-    2) employee sells to customer
-    3) clean tanks
+struct FishStore
+{
+// 5 properties:
+//     1) number of tanks (int)
+int numberOfTanks = 45;
+//     2) number of filters (int)
+int numberOfFilters = 90;
+//     3) number of employees on given day (int)
+int numberOfEmployees = 3;
+//     4) fish sold per day (int)
+int numberOfFishSold = 120;
+//     5) amount of RO water used per day (float)
+float amountOfWaterUsed = 200.f
+// 3 things it can do:
+//     1) water change
+void changeWater();
+//     2) employee sells to customer
+void sellFish(std::string fishType)
+//     3) clean tanks
+void cleanTanks();
+};
 
-Thing 2) Guitar Shop
-5 properties:
-    1) number of Gibson guitars in stock (int)
-    2) number of Fender guitars in stock (int)
-    3) number of employees on given day (int)
-    4) number of guitars sold per year (double)
-    5) amount of strings left in stock (int)
-3 things it can do:
-    1) sell a guitar to a customer
-    2) change pricing on a guitar
-    3) calculate shipping cost on a guitar
+struct GuitarShop
+{
+// 5 properties:
+//     1) number of Gibson guitars in stock (int)
+int numberOfGibsonGuitars = 300;
+//     2) number of Fender guitars in stock (int)
+int numberOfFenderGuitars = 250;
+//     3) number of employees on given day (int)
+int numberOfEmployees = 13;
+//     4) number of guitars sold per year (double)
+int numberOfGuitarsSold = 15000;
+//     5) amount of strings left in stock (int)
+int numberOfStrings = 1000;
+// 3 things it can do:
+//     1) sell a guitar to a customer
+void sellGuitar();
+//     2) change pricing on a guitar
+void changePrice(float originalPrice, float discountPercentage);
+//     3) calculate shipping cost on a guitar
+float calculateShippingCost(float shippingWeight, float shippingDistance);
+};
 
-Thing 3) Guitar repair shop
-5 properties:
-    1) amount of strings left in stock (int)
-    2) amount of replacement electronics left in stock (int)
-    3) amount of replacement pickups left in stock (int)
-    4) number of guitar picks given out per year (double)
-    5) number of guitars set up per day (int)
-3 things it can do:
-    1) fret redressing
-    2) change pickups
-    3) set up a guitar
+struct GuitarRepairShop
+{
+// 5 properties:
+//     1) amount of strings left in stock (int)
+int numberOfStrings = 1000;
+//     2) amount of replacement electronics left in stock (int)
+int numberOfElectronics = 50;
+//     3) amount of replacement pickups left in stock (int)
+int numberOfPickups = 20;
+//     4) number of guitar picks given out per year (double)
+double numberOfPicksGivenOut = 10000;
+//     5) number of guitars set up per day (int)
+int numberOfGuitarsSetUp = 10;
+// 3 things it can do:
+//     1) fret redressing
+void fretRedressing();
+//     2) change pickups
+void changePickups();
+//     3) set up a guitar
+void setUpGuitar();
+};
 
-Thing 4) Recording studio
-5 properties:
-    1) number of microphones (int)
-    2) number of amps (int)
-    3) number of engineers on given day (int)
-    4) number of tracks recorded per day (float)
-    5) length of time recorded per day (float)
-3 things it can do:
-    1) record a track
-    2) mix a track
-    3) master a track
+struct RecordingStudio
+{
+// 5 properties:
+//     1) number of microphones (int)
+int numberOfMicrophones = 42;
+//     2) number of amps (int)
+int numberOfAmps = 12;
+//     3) number of engineers on given day (int)
+int numberOfEngineers = 3;
+//     4) number of tracks recorded per day (float)
+int numberOfTracksRecorded = 4;
+//     5) length of time recorded per day (float)
+float lengthOfTimeRecorded = 6.5f;
+// 3 things it can do:
+//     1) record a track
+void recordTrack();
+//     2) mix a track
+void mixTrack();
+//     3) master a track
+void masterTrack();
+};
 
-Thing 5) Monitor
-5 properties:
-    1) resolution width in pixels (int)
-    2) resolution height in pixels (int) 
-    3) HDMI ports (int)
-    4) refresh rate in Hz (int)
-    5) diagnal size in inches (int)
-3 things it can do:
-    1) display an image
-    2) display a video
-    3) display a game
+struct DisplayMonitor
+{
+// 5 properties:
+//     1) resolution width in pixels (int)
+int resolutionWidth = 1920;
+//     2) resolution height in pixels (int) 
+int resolutionHeight = 1080;
+//     3) HDMI ports (int)
+int numberOfHDMIPorts = 2;
+//     4) refresh rate in Hz (int)
+int refreshRate = 144;
+//     5) diagnal size in inches (int)
+int sizeInInches = 27;
+// 3 things it can do:
+//     1) display an image
+void displayImage();
+//     2) display a video
+void displayVideo();
+//     3) display a game
+void displayGame();
+};
 
-Thing 6) Memory
-5 properties:
-    1) amount of RAM in GB (int)
-    2) speed of RAM in Hz (double)
-    3) RAM standard (std::string)
-    4) product voltage (float)
-    5) RAM technology (std::string)  
-3 things it can do:
-    1) run game 
-    2) run program
-    3) temporarily store data
+struct Memory
+{
+// 5 properties:
+//     1) amount of RAM in GB (int)
+int amountOfRAM = 16;
+//     2) speed of RAM in Hz (double)
+double speedOfRAM = 3200.0;
+//     3) RAM standard (std::string)
+std::string ramStandard = "DDR4";
+//     4) product voltage (float)
+float productVoltage = 1.2f;
+//     5) RAM technology (std::string) 
+std::string ramTechnology = "DDR";
+// 3 things it can do:
+//     1) run game 
+void runGame();
+//     2) run program
+void runProgram();
+//     3) temporarily store data
+void storeData();
+};
 
-Thing 7) CPU
-5 properties:
-    1) clock speed in GHz (float)
-    2) core count (int)
-    3) max clock speed in GHz (float)
-    4) max temperature in C (int)
-    5) model (std::string)
-3 things it can do:
-    1) process data
-    2) compute data
-    3) fetch instructions from memory
+struct CPU
+{
+// 5 properties:
+//     1) clock speed in GHz (float)
+float clockSpeed = 3.6f;
+//     2) core count (int)
+int coreCount = 6;
+//     3) max clock speed in GHz (float)
+float maxClockSpeed = 4.2f;
+//     4) max temperature in C (int)
+int maxTemperature = 100;
+//     5) model (std::string)
+std::string model = "Ryzen 5 3600";
+// 3 things it can do:
+//     1) process data
+void processData();
+//     2) compute data
+void computeData();
+//     3) fetch instructions from memory
+void fetchInstructions();
+};
 
-Thing 8) Motherboard
-5 properties:
-    1) RAM slots (int)
-    2) PCI slots (int)
-    3) branch (std::string)
-    4) form factor (std::string)
-    5) chipset (std::string)
-3 things it can do:
-    1) connect to CPU
-    2) connect RAM
-    3) connect GPU
+struct Motherboard
+{
+// 5 properties:
+//     1) RAM slots (int)
+int ramSlots = 4;
+//     2) PCI slots (int)
+int pciSlots = 2;
+//     3) branch (std::string)
+std::string branch = "AM4";
+//     4) form factor (std::string)
+std::string formFactor = "ATX";
+//     5) chipset (std::string)
+std::string chipset = "B450";
+// 3 things it can do:
+//     1) connect to CPU
+void connectCPU();
+//     2) connect RAM
+void connectRAM();
+//     3) connect GPU
+void connectGPU();
+};
 
-Thing 9) Storage
-5 properties:
-    1) number of hard drives (int)
-    2) number of SSD drives (int)
-    3) total storage in GB (int)
-    4) write speed in MB/s (int)
-    5) brand (std::string)
-3 things it can do:
-    1) write data
-    2) store data
-    3) load data
-    
-Thing 10)
-5 properties: Computer
-    1) Monitor
-    2) Memory
-    3) CPU
-    4) Motherboard
-    5) Storage
-3 things it can do:
-    1) run a program
-    2) program a program
-    3) play a game     
-*/
+struct Storage
+{
+// 5 properties:
+//     1) number of hard drives (int)
+int numberOfHardDrives = 2;
+//     2) number of SSD drives (int)
+int numberOfSSDDrives = 1;
+//     3) total storage in GB (int)
+int totalStorage = 1024;
+//     4) write speed in MB/s (int)
+int writeSpeed = 550;
+//     5) brand (std::string)
+std::string brand = "Samsung";
+// 3 things it can do:
+//     1) write data
+void writeData();
+//     2) store data
+void storeData();
+//     3) load data
+void loadData();
+};
+
+struct Computer
+{
+// 5 properties: 
+//     1) Monitor
+DisplayMonitor displayMonitor;
+//     2) Memory
+Memory memory;
+//     3) CPU
+CPU cpu;
+//     4) Motherboard
+Motherboard motherboard;
+//     5) Storage
+Storage storage;
+// 3 things it can do:
+//     1) run a program
+void runProgram();
+//     2) program a program
+void programProgram();
+//     3) play a game     
+void playGame();
+};
 
 
 
