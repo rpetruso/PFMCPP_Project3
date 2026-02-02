@@ -83,51 +83,51 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn
+            4) menu toggle
         Name 2 actions that the [Sub Object] can do:
             1) adjust cruise control settings.
-            2)
+            2) steer the car
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) odometer
+            2) speedometer
+            3) headlight indicator
+            4) fuel gauge
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) display the current speed
+            2) display the current fuel level
+            3) display miles on car
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) air conditioning controls
+            2) seat heater controls
+            3) vent controls
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) adjust the temperature
+            2) adjust the vent direction
+            3) adjust the seat heat
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) raidio controls
+            2) audio controls
+            3) audio device controls
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) change radio station
+            2) change audio volume
+            3) change audio device
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) cushion
+            2) headrest
+            3) seat controls
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) move seat foward and backward
+            2) adjust head rest
 */
 
 /*
@@ -195,54 +195,6 @@ Part 1b - Step 2: Assignment
         primitives.
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
-
-Thing 1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 2)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 3)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 4)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 */
 
 /*
@@ -308,7 +260,7 @@ Example:
 ===================
 Part 1c - Step 2: Assignment
 ===================
-    - write the name of the primitive type you'll be using after each property in UDTs 1-4 you created in Part 1b:
+    - write the name of the primitive type you'll be using after each property in UDTs 1-4 you created in Part 1b: 
     - pick properties that can be represented with 'int float double bool char std::string'.
     
 example: 
@@ -336,18 +288,6 @@ Part 1c - Step 4: Assignment
 Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
-
-Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
  /*
@@ -434,68 +374,6 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
 =================
 Part 1d - Step 3: Commit
 =================
@@ -544,9 +422,6 @@ MOVE THEM to the space below this block comment and put them in numerical order
     I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
     simply CUT and PASTE them in the space provided below:
 */
-
-
-
 
 
 
@@ -1010,7 +885,198 @@ Part 1e - Step 19: Request a review
 paste your code below
 */
 
+struct FishStore
+{
+    // 5 properties:
+    int numberOfTanks = 45;      //     1) number of tanks (int)
+    int numberOfFilters = 90;    //     2) number of filters (int)
+    int numberOfEmployees = 3;   //     3) number of employees on given day (int)
+    int numberOfFishSold = 120;   //     4) fish sold per day (int)
+    float amountOfWaterUsed = 200.f;     //     5) amount of RO water used per day (float)
 
+    // this is the nested UDT:
+    struct FishTank
+    {
+        // 5 member variables with relevant data types.
+        int tankGallonSize = 20;
+        int poundsOfGravel = 10;
+        int numberOfFilters = 2;
+        int numberOfHeaters = 1;
+        std::string brand = "UNS tanks";
+
+        // 3 member functions.
+        void fillTankWithWater(float gallonsOfWaterToFill = 10.f);
+        void drainTankOfWater(float gallonsOfWaterToDrain = 5.5f);
+        void addFishToTank(std::string fishType = "Cory Catfish", int numberOfFishToAdd = 1);
+
+    };
+
+    // things it can do:
+    void changeWater();                                 //     1) water change
+    void sellFish(std::string fishType, int amount);     //     2) employee sells Fish to customer
+    void sellFishTank(FishTank fishTank);               //     3) employee sells Tank to customer
+    void cleanTanks();                                  //     4) clean tanks
+
+    FishTank fishTankBeingUsed;                         // member variable whose type is a UDT.
+    };
+
+struct GuitarShop
+{
+    // 5 properties:
+    int numberOfGibsonGuitars = 300;        //     1) number of Gibson guitars in stock (int)
+    int numberOfFenderGuitars = 250;       //     2) number of Fender guitars in stock (int)
+    int numberOfEmployees = 13;           //     3) number of employees on given day (int)
+    int numberOfGuitarsSold = 15000;     //     4) number of guitars sold per year (double)
+    int numberOfStrings = 1000;         //     5) amount of strings left in stock (int)
+
+
+    // this is the nested UDT:
+    struct Guitar
+    {
+        int numberOfStrings = 6;
+        int numberOfFrets = 24;
+        std::string guitarType = "Electric";
+        std::string guitarBrand = "Gibson";
+        std::string guitarModel = "Les Paul";
+
+        void playGuitar();
+        void tuneGuitar(std::string tuningType ="Drop D");   
+        void changeStrings(std::string stringBrand = "Ernie Ball", std::string stringGauge = "10-46");
+    };
+
+    // 3 things it can do:
+    void sellGuitar(Guitar guitar);    //     1) sell a guitar to a customer
+    void changePrice(float originalPrice, float discountPercentage);     //     2) change pricing on a guitar
+    float checkStatusOfGuitar(Guitar guitar);        // check status of guitar
+
+    Guitar guitarBeingSold;      // member variable whose type is a UDT.
+
+    };
+
+struct GuitarRepairShop
+{
+    // 5 properties:
+    int numberOfStrings = 1000;          //     1) amount of strings left in stock (int)
+    int numberOfElectronics = 50;        //     2) amount of replacement electronics left in stock (int)
+    int numberOfPickups = 20;            //     3) amount of replacement pickups left in stock (int)
+    double numberOfPicksGivenOut = 10000;//     4) number of guitar picks given out per year (double)
+    int numberOfGuitarsSetUp = 10;       //     5) number of guitars set up per day (int)
+
+    // 3 things it can do:
+    void fretRedressing();        //     1) fret redressing
+    void changePickups();        //     2) change pickups
+    void setUpGuitar();         //     3) set up a guitar
+
+};
+
+struct RecordingStudio
+{
+    // 5 properties:
+    int numberOfMicrophones = 42;         //     1) number of microphones (int)
+    int numberOfAmps = 12;                //     2) number of amps (int)
+    int numberOfEngineers = 3;            //     3) number of engineers on given day (int)
+    int numberOfTracksRecorded = 4;       //     4) number of tracks recorded per day (float)
+    float lengthOfTimeRecorded = 6.5f;    //     5) length of time recorded per day (float)
+
+    // 3 things it can do:
+    void recordTrack();        //     1) record a track
+    void mixTrack();           //     2) mix a track
+    void masterTrack();        //     3) master a track
+
+};
+
+struct DisplayMonitor
+{
+    // 5 properties:
+    int resolutionWidth = 1920;    //     1) resolution width in pixels (int)
+    int resolutionHeight = 1080;    //     2) resolution height in pixels (int) 
+    int numberOfHDMIPorts = 2;    //     3) HDMI ports (int)
+    int refreshRate = 144;    //     4) refresh rate in Hz (int)
+    int sizeInInches = 27;    //     5) diagnal size in inches (int)
+
+    // 3 things it can do:
+    void displayImage();    //     1) display an image
+    void displayVideo();    //     2) display a video
+    void displayGame();    //     3) display a game
+
+};
+
+struct Memory
+{
+    // 5 properties:
+    int amountOfRAM = 16;                //     1) amount of RAM in GB (int)
+    double speedOfRAM = 3200.0;          //     2) speed of RAM in Hz (double)
+    std::string ramStandard = "DDR4";    //     3) RAM standard (std::string)
+    float productVoltage = 1.2f;         //     4) product voltage (float)
+    std::string ramTechnology = "DDR";    //     5) RAM technology (std::string) 
+
+    // 3 things it can do:
+    void runGame();       //     1) run game 
+    void runProgram();    //     2) run program
+    void storeData();     //     3) temporarily store data
+
+};
+
+struct CPU
+{
+    // 5 properties:
+    float clockSpeed = 3.6f;           //     1) clock speed in GHz (float)
+    int coreCount = 6;                 //     2) core count (int)
+    float maxClockSpeed = 4.2f;        //     3) max clock speed in GHz (float)
+    int maxTemperature = 100;        //     4) max temperature in C (int)
+    std::string model = "Ryzen 5 3600";        //     5) model (std::string)
+
+    // 3 things it can do:
+    void processData();              //     1) process data
+    void computeData();              //     2) compute dat
+    void fetchInstructions();        //     3) fetch instructions from memory
+
+};
+
+struct Motherboard
+{
+    // 5 properties:
+    int ramSlots = 4;        //     1) RAM slots (int)
+    int pciSlots = 2;        //     2) PCI slots (int)
+    std::string branch = "AM4";        //     3) branch (std::string)
+    std::string formFactor = "ATX";        //     4) form factor (std::string)
+    std::string chipset = "B450";        //     5) chipset (std::string)
+
+    // 3 things it can do:
+    void connectCPU();        //     1) connect to CPU
+    void connectRAM();        //     2) connect RAM
+    void connectGPU();        //     3) connect GPU
+};
+
+struct Storage
+{
+    // 5 properties:
+    int numberOfHardDrives = 2;    //     1) number of hard drives (int)
+    int numberOfSSDDrives = 1;        //     2) number of SSD drives (int)
+    int totalStorage = 1024;    //     3) total storage in GB (int)
+    int writeSpeed = 550;    //     4) write speed in MB/s (int)
+    std::string brand = "Samsung";    //     5) brand (std::string)
+
+    // 3 things it can do:
+    void writeData();    //     1) write data
+    void storeData();        //     2) store data
+    void loadData();        //     3) load data
+};
+
+struct Computer
+{
+    // 5 properties: 
+    DisplayMonitor displayMonitor;        //     1) Monitor
+    Memory memory;        //     2) Memory
+    CPU cpu;
+    Motherboard motherboard;
+    Storage storage;
+
+    // 3 things it can do:
+    void runProgram();
+    void programProgram();
+    void playGame();
+};
 
 
 
